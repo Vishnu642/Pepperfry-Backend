@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+#navbar {
+  position: fixed;
+  background-color: white;
+  z-index: 501;
+}
+
+#links {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  width: 95%;
+  margin: auto;
+}
+
+#logo {
+  width: 14.5%;
+  margin-left: 42px;
+}
+
+#logo > a > img {
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+#searchbar {
+  margin-left: 36px;
+  padding-top: 16px;
+}
+
+#searchbar > input {
+  width: 604px;
+  height: 44px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+
+#searchbar > input:focus {
+  outline: none;
+}
+
+#searchbar > input::placeholder {
+  font-size: 0.88rem;
+  padding-top: 1px;
+  padding-left: 8px;
+  color: #aaaaaa;
+  font-family: "Fira Sans", sans-serif;
+}
+
+#searchbar > i {
+  display: none;
+  position: absolute;
+  left: 50%;
+  padding-top: 7px;
+  font-size: 2rem;
+}
+
+#icon {
+  display: flex;
+  padding: 15px;
+  margin-left: 20px;
+  padding-bottom: 0;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-right: 33px;
+  text-align: center;
+}
+
+.links:hover {
+  cursor: pointer;
+}
+
+.links > span {
+  font-size: 0.8rem;
+}
+
+.links .material-icons-outlined {
+  font-size: 1.7rem !important;
+  padding-bottom: 2px;
+  color: black;
+}
+
+#signin-div,
+#login-div {
+  position: absolute;
+  margin-top: 50px;
+  right: 20px;
+  width: 130px;
+  height: 80px;
+  z-index: 203;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+#signin-div > button {
+  font-size: 0.68rem;
+  border: none;
+  padding: 10px;
+  color: white;
+  background-color: #f36523;
+}
+
+#signin-div > button:hover {
+  cursor: pointer;
+}
+
+#signin-div > p {
+  font-size: 0.68rem;
+  text-align: left;
+  color: black;
+}
+
+#login-div {
+  position: absolute;
+  margin-top: 50px;
+  right: 20px;
+  width: 110px;
+  height: 80px;
+  z-index: 303;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  display: none;
+}
+hr {
+  color: rgb(235, 235, 235);
+  border-bottom: 1px solid rgb(235, 235, 235);
+  margin-bottom: 0px;
+  padding: 0px;
+}
+#category {
+  display: flex;
+  justify-content: space-evenly;
+  width: 95%;
+  margin: auto;
+  padding-top: 12.5px;
+  padding-left: 30px;
+
+  border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+#category > div {
+  margin-right: 59.3px;
+  height: 33px;
+}
+
+#category > div > a {
+  font-size: 0.86rem;
+  text-decoration: none;
+  color: black;
+}
+
+#category > div:hover {
+  font-weight: bold;
+  cursor: pointer;
+  height: 28px;
+  border-bottom: 5px solid #f36523;
+}
+
+#furniture-dropdown {
+  width: 90.5%;
+  margin-left: 54px;
+  height: 450px;
+  display: none;
+  z-index: 101;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#living-dropdown {
+  width: 90.5%;
+  margin-left: 54px;
+  height: 420px;
+  display: none;
+  z-index: 102;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#furniture-a {
+  padding: 12px;
+  border-bottom: 1px solid lightgrey;
+}
+
+#furniture-a > span {
+  margin-right: 107px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.furniture-b {
+  width: 11.5%;
+  height: 375px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.furniture-b > a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.85rem;
+  padding-bottom: 14px;
+}
+
+.furniture-b > a:hover {
+  color: #f36523 !important;
+  font-weight: bold;
+}
+
+#signin-modal,
+#login-modal {
+  position: absolute;
+  margin-top: 50px;
+  left: 280px;
+  top: 0px;
+  width: 55%;
+  height: 500px;
+  z-index: 204;
+  background-color: white;
+  border-radius: 3px;
+  display: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#login-modal-text {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 250px;
+}
+
+#login-modal-text > p {
+  color: #f36523;
+  font-weight: bold;
+}
+
+#close,
+#close1 {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 1.5rem;
+}
+
+#close:hover {
+  cursor: pointer;
+}
+
+#close1:hover {
+  cursor: pointer;
+}

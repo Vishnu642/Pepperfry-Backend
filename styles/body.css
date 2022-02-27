@@ -1,0 +1,284 @@
+#cdiv{
+    /* border: 2px solid yellow; */
+    display: flex;
+    
+}
+#middle_inner_div{
+    border: 0.5px solid #f5f5f5;
+    width: 50%;
+    margin-left: 130px;   
+    margin-top: 20px;
+    
+}
+.accordion {
+background-color: #eee;
+color: #444;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+height: 70px;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+transition: 0.4s;
+
+}
+.panel {
+padding: 0 18px;
+background-color: #f5f5f5;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+margin-bottom: 5px;
+}
+
+.active, .accordion:hover {
+background-color: #ccc;
+}
+
+.accordion:after {
+content: '\002B';
+color: red;
+font-weight: bold;
+float: right;
+margin-left: 15px;
+}
+
+.active:after {
+content: "\2212";
+}
+#upper_box{
+  /* border: 2px solid red; */
+  display: flex;
+
+}
+#upper_box>div{
+  /* border: 2px solid green; */
+  text-align: center;
+  flex: 1;
+  height: 200px;
+}
+#input_gmail,#input_password{
+  height: 30px;
+  width: 60%;
+  border: 2px solid black;
+  margin: 20px;
+  border-radius: 5px;
+
+}
+#sigin_butn{
+  height: 40px;
+  width: 40%;
+  background-color: #f16521;
+}
+#G_F>button{
+margin: 20px;
+width: 100px;
+height: 40px;
+}
+#Shipping_text{
+  /* border: 2px solid blue; */
+  width: 85%;
+  margin: auto;
+  margin-top: 20px;
+}
+#addres_info_div{
+  /* border: 2px solid red; */
+  width: 100%;
+  margin: auto;
+  display: flex;
+  margin-top: 10px;
+}
+#name_info_div{
+  /* border: 2px solid black; */
+  flex: 1;
+
+}
+#name_info_div>p{
+  padding: 25px;
+  margin-left: 35px;
+}
+
+#add_input_div{
+  /* border: 2px solid yellow; */
+  flex: 2;
+}
+#add_input_div>input{
+  margin:15px;
+  width: 75%;
+  height: 30px;
+  border: 2px solid rgb(226, 221, 221);
+  border-radius: 5px;
+  padding:5px;
+  
+}
+#add_input_div>textarea{
+  border: 2px solid rgb(226, 221, 221);
+  width: 70%;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 5px;
+}
+#add_input_div>div>input,select{
+  border: 2px solid rgb(226, 221, 221);
+  width: 40%;
+  margin: 15px;
+  height: 30px;
+  border-radius: 5px; 
+}
+#add_sav_btn{
+  width: 60%;
+  height:40px;
+  background-color: #f16521;
+  color: white;
+  margin-left: 15%;
+  margin-bottom: 5px;
+  
+}
+#payment_div{
+  /* border: 2px solid red; */
+  margin-top: 15px;
+  height: 400px;
+  display: flex;
+}
+#card_ooption{
+  /* border: 2px solid green; */
+  flex: 1;
+}
+#display_card{
+  /* border: .5px solid brown; */
+  flex: 2;
+  text-align: center;
+}
+
+
+#all_card_div{
+  /* border: 2px solid brown; */
+  width: 60%;
+  /* height: 60%; */
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+
+}
+#all_card_div>div{
+  /* border: 2px solid red; */
+  width: 35%;
+  justify-content:space-between;
+  margin: 15px;
+
+}
+#proceed_btn{
+  width: 60%;
+  height: 50px;
+  margin-top: 15px;
+  background-color: #f16521;
+  color: white
+  
+  
+
+}
+#card_ooption>div{
+  width: 80%;
+  height: 30px;
+  /* border: 2px solid green; */
+  padding: 15px;
+  margin: auto;
+  margin-top: 5px;
+  background-color: #ececec;
+
+}
+#card_ooption>div:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+
+
+}
+
+#order_summary_first_div{
+  height:25px;
+  display: flex;
+  /* border: 2px solid red; */
+}
+#cart_add_div{
+  height: 100px;
+  /* width: 30%; */
+  border: 2px solid #f5f5f5;
+  margin: 5px;
+  display: flex;
+  /* border: 2px solid red; */
+  background-color: white;
+}
+#added_items{
+  /* border: 2px solid blue; */
+  height:150px;
+  display: grid;
+  grid-template-columns: repeat(12,30%);
+  overflow-x: scroll;
+ 
+}
+#div_two{
+  /* border: 2px solid brown; */
+  width: 55%;
+  text-align: center;
+  margin: auto;
+}
+#div_three{
+  /* border: 2px solid springgreen; */
+  display: flex;
+  justify-content: space-around;
+}
+#rigth_billing{
+  height: 200px;
+  width: 90%;
+  border: 2px solid rgb(226, 221, 221);
+  margin-top: 20px;
+  
+}
+#save_continue_butn{
+  width: 60%;
+  height: 50px;
+  margin-top: 15px;
+  background-color: #f16521;
+  color: white
+}
+#rigth_billing>div{
+  margin: auto;
+  margin-top: 10px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid black; */
+}
+#rigth_billing>div>button{
+  background-color:transparent;
+}
+#tot_div{
+  margin-top: 30px;
+  border-radius: 3px;
+  height: 25px;
+  padding:15px;
+}
+#rightabc{
+  /* border: 2px solid yellow; */
+  width: 30%;
+  height: 350px;
+  margin-left: 40px;
+}
+#more_info{
+  padding: 15px;
+}
+#more_info>p{
+  font-size: small;
+}
+#more_info>input{
+  margin-top: 20px;
+}
+#cart_img{
+    margin: 5px;
+
+}

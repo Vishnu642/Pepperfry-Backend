@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+#containe {
+  background-color: rgb(243, 245, 247);
+}
+#containe > #div1 {
+  display: flex;
+  align-items: center;
+  width: 88%;
+  height: 400px;
+  margin: auto;
+  /* border: 1px solid black; */
+}
+#containe > #div1 > .smallbox {
+  height: 80%;
+  text-align: left;
+  width: 25%;
+  /* border: 1px solid black; */
+}
+.smallbox > p,
+h6 {
+  font-family: "Manrope", "Montserrat", sans-serif;
+  font-size: 14px;
+  color: rgb(114, 113, 109);
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.smallbox > h6 {
+  /* font-family: 'Manrope','Montserrat', sans-serif; */
+  font-size: 16px;
+  text-decoration: none solid rgb(18, 18, 18);
+  color: black;
+  /* margin-bottom: 15px; */
+}
+.smallbox > h5,
+img {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+#div2,
+#div3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 88%;
+  height: 270px;
+  margin: auto;
+}
+#div2 > div {
+  text-align: left;
+  width: 31%;
+}
+#div2 {
+  border-bottom: 1px solid gray;
+}
+.smallbox2 > p {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(114, 113, 109);
+}
+.smallbox2 > h6 {
+  color: black;
+}
+/* hiii */
+
+#img1 {
+  width: 60%;
+  height: 80%;
+}
+#img1,
+#socialtag {
+  width: 55%;
+  height: 80%;
+}
+#socialtag {
+  width: 40%;
+}
+#pay {
+  height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+}
+
+#img1 h4,
+h5 {
+  margin-top: 10px;
+}
+h5 {
+  margin-bottom: 20px;
+}
+
+.ftr-social-list a {
+  margin-right: 10px;
+}

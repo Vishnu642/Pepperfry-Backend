@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#contBox {
+  width: 88%;
+  margin: auto;
+  /* border: 1px solid black; */
+}
+#bigslider {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 430px;
+  /* border: 1px solid black; */
+}
+#bigslider > div:nth-child(1) {
+  width: 73%;
+  height: 430px;
+  /* border: 1px solid yellow; */
+}
+#bigslider > div:nth-child(2) {
+  width: 26%;
+  height: 430px;
+  /* border: 1px solid red; */
+}
+#statick img {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+#slider img {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+  #bigslider > div:nth-child(1) {
+    width: 100%;
+  }
+  #bigslider > div:nth-child(2) {
+    display: none;
+  }
+}
+#fix {
+  margin-top: 15px;
+  width: 100%;
+  height: 100px;
+}
+#fix > img {
+  width: 100%;
+  height: 100%;
+}
+/* <!-- sliderEnded --> */
+#memories {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 350px;
+  margin-top: 20px;
+}
+#memoriesDiv {
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  justify-content: space-between;
+  height: 280px;
+}
+.eachdiv {
+  height: 100%;
+  text-align: left;
+}
+.eachdiv > div {
+  width: 100%;
+  height: 85%;
+}
+.eachdiv > div img {
+  width: 100%;
+  height: 100%;
+}
+.eachdiv > p {
+  font-size: x-large;
+}
+@media only screen and (max-width: 700px) {
+  #kidsDiv {
+    display: none;
+  }
+  #memories {
+    width: 100%;
+    height: 270px;
+    margin-bottom: 20px;
+  }
+  #memoriesDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+  }
+  .eachdiv > p {
+    font-size: larger;
+  }
+}
+/* nextCSsEnded */
+
+#infuse {
+  /* height: 400px; */
+  width: 100%;
+}
+#infuse-cont {
+  display: grid;
+  grid-template-columns: repeat(3, 32.5%);
+  justify-content: space-between;
+  height: auto;
+  /* auto aur perticular height */
+  width: 100%;
+  top: 0%;
+  /* border: 4px solid orange; */
+}
+#infuse-cont > div {
+  height: 100%;
+}
+#infuse-cont > div img {
+  width: 100%;
+  height: 100%;
+}
+#fourImg {
+  display: grid;
+  justify-content: space-between;
+  align-content: space-between;
+  grid-template-columns: repeat(2, 49%);
+  grid-template-rows: repeat(2, 49%);
+  /* border: 1px solid yellow; */
+}
+
+/* end */
+#handPicked-div {
+  width: 100%;
+  height: 410px;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.bg-img {
+  width: 100%;
+  height: 350px;
+}
+#handPicked-div img {
+  width: 100%;
+  height: 100%;
+}
+#handPicked-div h4 {
+  margin-bottom: 0px;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 700px) {
+  #handPicked-div {
+    grid-template-columns: repeat(2, 49%);
+    justify-content: space-between;
+  }
+  #handPicked-div > div:nth-child(3) {
+    display: none;
+  }
+}
+
+/* 555555555555555555555555555555 */
+#handPicked-div2 {
+  width: 100%;
+  height: 410px;
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.bg-img {
+  width: 100%;
+  height: 350px;
+}
+#handPicked-div2 img {
+  width: 100%;
+  height: 100%;
+}
+#handPicked-div2 h4 {
+  margin-bottom: 0px;
+  font-weight: 900;
+  font-size: 22px;
+}
+@media only screen and (max-width: 700px) {
+  #handPicked-div2 {
+    height: fit-content;
+    grid-template-columns: repeat(2, 49%);
+    grid-template-rows: auto auto;
+    justify-content: space-between;
+  }
+}
+/* %%%%%%%%%%%%%%%%%% */
+
+#brandsDiv {
+  width: 100%;
+  height: 200px;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(6, 15.5%);
+}
+#brandsDiv > div {
+  height: 200px;
+  width: 100%;
+}
+#brandsDiv img {
+  height: 100%;
+  width: 100%;
+}
+@media only screen and (max-width: 800px) {
+  #brandsDiv {
+    width: 100%;
+    height: 310px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 33%);
+    grid-gap: 7px;
+  }
+  #brandsDiv > div {
+    height: 150px;
+    width: 100%;
+  }
+}
+
+/* end */
+#modular {
+  display: grid;
+  grid-template-columns: repeat(2, 49%);
+  justify-content: space-between;
+  grid-gap: 2%;
+  margin-top: 30px;
+  width: 100%;
+  /* height: 400px; */
+}
+#modular > div {
+  height: 400px;
+}
+#modular > div img {
+  height: 100%;
+  width: 100%;
+}
+@media only screen and (max-width: 800px) {
+  #modular > div {
+    height: 100%;
+    height: 200px;
+  }
+}
+
+/* modular css ended */
+#bigbull {
+  width: 100%;
+  height: 500px;
+  margin-top: 45px;
+  background-image: url("https://ii1.pepperfry.com/images/hp_more_from_store_bg.jpg");
+  background-size: cover;
+}
+#entire {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  height: 400px;
+  padding-left: 5%;
+}
+#entire div {
+  margin-top: 0px;
+}
+.hp-more-frm-card {
+  padding: 10px 0 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 14px;
+}
+a {
+  color: rgb(53, 53, 53);
+  font-weight: lighter;
+  font-size: 13px;
+}
+a:hover {
+  color: rgb(255, 196, 0);
+  text-decoration: none;
+}
+.hp-more-frm-card-ttl {
+  font-size: x-large;
+  color: black;
+  font-weight: 500;
+}
+.hp-more-frm-card {
+  padding: 10px 0 0;
+}
+@media only screen and (max-width: 800px) {
+  #entire {
+    width: 100%;
+  }
+  .hp-more-frm-card-ttl {
+    font-size: large;
+  }
+}
+
+/* endthe end */
+
+#contBox2 {
+  width: 88%;
+  margin: auto;
+  /* border: 1px solid black; */
+}
+#cus-rating {
+  height: 400px;
+  width: 100%;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 32%);
+  /* border: 1px solid red; */
+}
+#cus-rating > div {
+  height: 400px;
+  width: 100%;
+  /* border: 1px solid teal; */
+  text-align: left;
+}
+#cus-rating > div > img {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+#cus-rating > div > p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.993);
+  font-weight: 500;
+}
+#cus-rating > div > h4 {
+  font-size: 15px;
+  margin: 0px;
+  padding: 0%;
+  color: rgba(0, 0, 0, 0.993);
+  /* font-weight: 500; */
+}
+#cus-rating > div > h5 {
+  font-size: 15px;
+  margin: 0px;
+  padding: 0%;
+}
+@media only screen and (max-width: 800px) {
+  #cus-rating > div > p,
+  h5 {
+    font-size: 12px;
+  }
+}
+
+#goTop {
+  z-index: 1;
+  float: right;
+  /* margin-left: 80%; */
+  position: fixed;
+  /* position: fixed; */
+  border: 5px solid red;
+}

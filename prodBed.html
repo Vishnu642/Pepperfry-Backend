@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Products | Beds</title>
+    <link rel="stylesheet" href="/styles/productDetail.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />  
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+    <header id="header"></header>
+    <div id="main">
+        <!-- side bar section div  -->
+        <div id="sort-sec">
+          
+        </div>
+        <!-- data div in which data is appended -->
+        <div id="data">
+
+        </div>
+
+    </div>
+    <footer id="footer"></footer>
+    
+</body>
+</html>
+<script type="module">
+    import appendData from "/scripts/function.js";
+    import struc from "/components/structure.js"
+    
+   
+
+        let bed;
+        let url="https://pepperfrycloneapi.herokuapp.com/beds"
+
+        getdetails(url)
+
+        async function getdetails(url){
+            let res = await fetch(url);
+             bed =  await res.json();
+
+
+
+             let chngDrop = document.getElementById('highLow')    
+    chngDrop.addEventListener('change', ()=>{
+        let chngDropResult = chngDrop.value;
+        console.log(chngDropResult);
+        if(chngDropResult == "high"){
+            bed.sort((a,b)=>{
+                return Number(b.dprice-a.dprice)
+            })
+            let loc = document.getElementById("data");
+            loc.innerHTML = "";
+            appendData(bed, loc);  
+        }if(chngDropResult == "low"){
+            bed.sort((a,b)=>{
+                return Number(a.dprice-b.dprice)
+            })
+            let loc = document.getElementById("data");
+            loc.innerHTML = "";
+             appendData(bed, loc);
+        }    
+    })
+
+
+
+             
+             let func = appendData(bed, loc);
+        }
+        
+
+
+    let loc = document.getElementById("data");
+
+    let container = document.getElementById("sort-sec");
+    container.innerHTML = struc();
+</script>
+<script type="module" src="/scripts/index.js"></script>
