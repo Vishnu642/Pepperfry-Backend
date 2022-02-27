@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    border: 0px;
+}
+#pay_ment_nav_bar{
+    height: 100px;
+    width: 100%;
+  
+    display: flex;
+    
+}
+#name_pepperfry{
+   
+  
+     width: 30%;                  
+    text-align: center;
+    padding: 30px;
+    color: #ef3523;
+    font-family: 'Manrope', sans-serif;
+}
+#root-pat{
+   
+    margin-left: 85px;
+    padding: 40px;
+    color: #ef3523;
+    
+}
+#root-pat>a{
+    text-decoration: none;
+    color: #ef3523;
+}
+/* footer */
+#pay_ment_nav_bar_footer{
+    height: 300px;
+    border: 2px solid transparent;
+    background-color: #efefef;
+    /* color: #b3bfd0; */
+  }
+  
+  #inside-footer-div{
+      width: 80%;
+      /* border: 2px solid red; */
+      display: flex;
+      margin: auto;
+      margin-top: 35px;
+  }
+  #inside-footer-div>div{
+      width: 30%;
+      height: 170px;
+      /* border: 2px solid black; */
+      margin-left: 25px;
+
+  }
+  #same-img-id{
+      margin:5px;
+  }
+  #cards-img-div{
+     margin-top: 20px;
+  }
+  #third-secure{
+      text-align: center;
+  }
+  #copy_rigth_div{
+      /* border: 2px solid black; */
+      width: 25%;
+      margin: auto;
+
+  }
