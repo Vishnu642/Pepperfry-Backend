@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/nav.css" />
+    <link rel="stylesheet" href="/styles/nav1.css" />
+    <style></style>
+  </head>
+  <body>    
+        <div id="user">
+          <img
+            src="https://i.pinimg.com/474x/76/4d/59/764d59d32f61f0f91dec8c442ab052c5.jpg"
+            height="30px"
+            alt=""
+          />
+          <div id="user1"><button id="loin">LOGIN/REGISTER</button> <br /></div>
+        </div>
+      
+
+    <!-- sign up------------------------------ -->
+
+    <div id="main">
+      <img
+        src="https://w7.pngwing.com/pngs/1008/558/png-transparent-computer-icons-button-close-angle-rectangle-logo-thumbnail.png"
+        height="20px"
+        id="close"
+        style="position: absolute"
+      />
+      <div id="register_offer">
+        <img
+          src="https://ii1.pepperfry.com/media/wysiwyg/banners/Web_IMG_17Dec_13012022.jpg"
+        />
+      </div>
+      <div id="signup_details">
+        <div id="data">
+          <div id="signup_div">
+            <form id="myform">
+              <input id="name" type="text" placeholder="Name" />
+              <input id="mobile" type="number" placeholder="Mobile_Number" />
+              <input id="email" type="text" placeholder="Email" />
+              <input id="password" type="password" placeholder="Password" />
+              <input type="submit" id="submit" placeholder="Sign up" />
+              <p id="tc">By registering you agree to our Terms & Conditions</p>
+            </form>
+          </div>
+          <div id="login_div">
+            <button id="loginbutton">Existing User?Login</button>
+            <div id="mainlogin_div">
+              <div id="logindiv1">Or Continue With</div>
+              <div id="logindiv2">
+                <a href="https://www.facebook.com/"
+                  ><img
+                    src="https://ii1.pepperfry.com/images/social_login_fb_2x.png"
+                    height="35px"
+                /></a>
+              </div>
+              <div id="logindiv3">
+                <a
+                  href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                  ><img
+                    src="https://ii1.pepperfry.com/images/social_login_google_2x.png"
+                    height="35px"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- login page------------------------------------------------- -->
+
+    <div id="main1">
+      <div class="img">
+        <img class="login-img" src="./23.01.2022_14.50.09_REC.png" alt="" />
+      </div>
+      <div class="login">
+        <img
+          src="https://w7.pngwing.com/pngs/1008/558/png-transparent-computer-icons-button-close-angle-rectangle-logo-thumbnail.png"
+          height="20px"
+          id="close1"
+          style="position: absolute"
+        />
+        <div id="register_offer">
+          <img
+            class="cross"
+            src="https://lh3.googleusercontent.com/m0-qbxW3DMS45Xqwx_IEKG_dc_daAJ6nUqUFOaUVyOFHNX8qk0VeOb3KKmrPeFAi5rfzPtze0EUgaU8jWeP1wqlUm-2yRf_oFlTnxuJXBQ"
+          />
+        </div>
+        <div id="signup_details">
+          <div id="data">
+            <div id="signup_div">
+              <input id="email" type="text" placeholder="Email" />
+              <input id="password" type="password" placeholder="Password" />
+              <button onclick="loginsucess()" id="submit">Send OTP</button>
+              <p id="tc">Forgot password</p>
+            </div>
+            <div id="login_div1">
+              <button id="loginbutton1">New to pepperfry?Register here</button>
+              <div id="mainlogin_div">
+                <div id="logindiv1">Or Continue With</div>
+                <div id="logindiv2">
+                  <a href="https://www.facebook.com/"
+                    ><img
+                      src="https://ii1.pepperfry.com/images/social_login_fb_2x.png"
+                      height="35px"
+                  /></a>
+                </div>
+                <div id="logindiv3">
+                  <a
+                    href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                    ><img
+                      src="https://ii1.pepperfry.com/images/social_login_google_2x.png"
+                      height="35px"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  // popup ---------------
+
+  document.getElementById("user").addEventListener("mouseover", userhover);
+  document.getElementById("user").addEventListener("mouseout", userhover1);
+  function userhover() {
+    document.getElementById("user1").style.display = "flex";
+  }
+  function userhover1() {
+    // document.getElementById("user1").style.display = "none";
+  }
+
+  // -----------signup----------------------------------------------------
+  document.getElementById("loin").addEventListener("click", funccc);
+
+  function funccc() {
+    document.getElementById("main").style.display = "flex";
+  }
+
+  document.getElementById("close").addEventListener("click", funcccc);
+
+  function funcccc() {
+    document.getElementById("main").style.display = "none";
+  }
+
+  // ----------------login--------------------------------------------------------------
+
+  document.getElementById("loginbutton").addEventListener("click", loginpage);
+
+  function loginpage() {
+    document.getElementById("main").style.display = "none";
+    document.getElementById("main1").style.display = "flex";
+  }
+
+  document.getElementById("loginbutton1").addEventListener("click", loginpage1);
+
+  function loginpage1() {
+    document.getElementById("main1").style.display = "none";
+    document.getElementById("main").style.display = "flex";
+  }
+  document.getElementById("close1").addEventListener("click", closefun);
+
+  function closefun() {
+    document.getElementById("main1").style.display = "none";
+  }
+
+  // -------------------get inspired
+
+  document
+    .getElementById("getinspired")
+    .addEventListener("mouseover", getinspired);
+  function getinspired() {
+    document.getElementById("belownav").style.display = "none";
+    document.getElementById("belownav1").style.display = "flex";
+  }
+  document
+    .getElementById("getinspired")
+    .addEventListener("mouseout", getinspired1);
+  function getinspired1() {
+    document.getElementById("belownav").style.display = "flex";
+    document.getElementById("belownav1").style.display = "none";
+  }
+  // -----------------------------partner
+
+  document.getElementById("partner").addEventListener("mouseover", partner);
+  function partner() {
+    document.getElementById("belownav").style.display = "none";
+    document.getElementById("belownav2").style.display = "flex";
+  }
+
+  document.getElementById("partner").addEventListener("mouseout", partner1);
+  function partner1() {
+    document.getElementById("belownav").style.display = "flex";
+    document.getElementById("belownav2").style.display = "none";
+  }
+
+  document.querySelector("form").addEventListener("submit", chekcforblank);
+
+  var user_details = JSON.parse(localStorage.getItem("usercred")) || [];
+  // console.log(user_details);
+
+  function chekcforblank(event) {
+    event.preventDefault();
+
+    var email = document.getElementById("email").value;
+    var pass = document.getElementById("password").value;
+
+    var userobj = {
+      email: email,
+      pass: pass,
+    };
+
+    user_details.push(userobj);
+    localStorage.setItem("usercred", JSON.stringify(user_details));
+
+    console.log(user_details);
+    alert("Sign up Successful");
+  }
+
+  // LOGIN
+
+  let details = JSON.parse(localStorage.getItem("usercred"));
+  console.log("details", details);
+
+  function loginsucess() {
+    let flag = false;
+    let email = document.querySelector("#email").value;
+    let pass = document.querySelector("#password").value;
+    if (mobile == 007) {
+      window.location.href = "/admin.html";
+    } else {
+      let details = JSON.parse(localStorage.getItem("usercred")) || [];
+      for (var i = 0; i < details.length; i++) {
+        if (details[i].email == email && details[i].pass == pass) {
+          flag = true;
+        }
+      }
+    }
+    if (flag === true) {
+      let otimep = random();
+      alert(otimep);
+      let enter = prompt("Enter OTP");
+      if (enter != null && Number(enter) === otimep) {
+        setTimeout(function () {
+          alert("Login sucessful");
+          window.location.href = "/index.html";
+        }, 0);
+      } else {
+        alert("Invalid OTP");
+        window.location.href = "/login.html";
+      }
+    } else {
+      alert("Wrong Credentials");
+    }
+  }
+
+  function random() {
+    var otp = Math.round(1000 + Math.random() * 8999);
+    return otp;
+  }
+</script>

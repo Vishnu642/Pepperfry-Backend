@@ -1,0 +1,68 @@
+#belownav{
+    height: 30px;
+    display: flex;
+    border-bottom: 2px solid grey;
+}
+
+#belownav>div {
+    border: transparent;
+    margin-left: 20px;
+}
+#belownav>div{
+   line-height: 5px;
+   font-family: monospace;
+   font-weight: bold;
+   font-size: 15px;
+   
+}
+#belownav>div:hover{
+    line-height: 5px;
+    font-family: monospace;
+    text-decoration: 3px underline orangered;
+    
+ }
+
+#mt{
+    color: white;
+}
+
+/* --------------------------------getinspired------- */
+
+#belownav1{
+    height: 30px;
+    display: none;
+    border-bottom: 2px solid grey;
+}
+#belownav1>div {
+    border: transparent;
+    margin-left: 20px;
+}
+#belownav1>div{
+   line-height: 5px;
+   font-family: monospace;
+   font-weight: bold;
+   font-size: 15px;
+   
+}
+/* partner */
+
+
+#belownav2{
+    height: 30px;
+    display: none;
+    border-bottom: 2px solid grey;
+}
+#belownav2>div {
+    border: transparent;
+    margin-left: 20px;
+}
+#belownav2>div{
+   line-height: 5px;
+   font-family: monospace;
+   font-weight: bold;
+   font-size: 15px;
+   
+}
+
+
+

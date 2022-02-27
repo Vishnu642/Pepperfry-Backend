@@ -1,0 +1,175 @@
+*{
+    font-family: system-ui;
+}
+#main{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 18% 72%;
+    grid-template-rows: auto;
+    grid-gap: 20px;                        
+}
+#sidebar,
+#sort {
+    display: flex;
+    gap: 5px;            
+}
+input,
+span {
+    display: block;
+}
+span {
+    margin: 13px 0px 0px 5px;
+}
+input {
+    margin-top: 20px;
+}
+input[type="radio"] {
+    accent-color: orangered;
+}
+input[type="checkbox"] {
+    height: 15px;
+    width:  15px;
+    accent-color: orangered;
+    border-radius: 10px;
+}
+input:checked ~ .mark {
+    background-color: orangered;
+}
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--form-background);
+    font: inherit;
+    color: currentColor;
+    width: 1em;
+    height: 1em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+.sidebar-heading {            
+    border-top: 1px solid rgb(204, 204, 204);
+    margin-top: 30px;
+    padding-top: 7px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 10px;
+}
+input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    background-color: orangered;
+}
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+#lbl-sort{
+    /* margin-top: 5px; */
+    line-height: 23px;
+}
+#data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap:30px;
+}
+#data>div>img {
+    height: 285px;
+    width: 285px;
+    border-radius: 10px;
+}
+#data>div>p {
+    line-height: 20px;
+}
+#price-inp{
+    margin-top: 8px;
+}
+#price-lbl{
+    line-height: 22px;
+    margin-top: 10px;
+}
+.prod-card{
+    line-height: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.prod-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: translateY(-3px);
+    transition: 0.8s;
+}
+.prod-card>p{
+    font-weight: 500;
+}
+
+.prod-card>P:nth-child(6){
+    color: orangered;
+}
+.prod-card>P:nth-child(7),p:nth-child(5){
+    color: grey;
+    font-size: 13px;
+}
+.prod-card>P:nth-child(7){            
+    margin-left: 10px;
+    display: inline;
+    text-decoration: line-through;
+}        
+.prod-card>P:nth-child(8){
+    margin-top: 10px;
+}
+.discountPr{
+    color: rgb(9, 199, 9);
+}
+.prod-img{
+    position: relative;
+}
+.cart-btn,.wish-btn{
+    z-index: 1;
+    position: absolute;
+    border: none;
+    border-radius: 4px;
+    display: none;
+    height: 30px;
+    width: 120px;
+    font-weight: 600;
+    color: white;
+    transition: 1s;
+}
+.cart-btn{   
+    background-color: orangered;    
+    margin: 250px 0px 0px 20px;
+}
+.wish-btn{
+    background-color:rgb(9, 199, 9);
+    margin: 250px 0px 0px 145px;
+}
+.fa{
+    z-index: 1; 
+    color:white;
+    position: absolute;
+    font-size: 40px;
+    margin: 5px 0px 0px 230px;
+}
+.hImg{
+    z-index: 1; 
+    position: absolute;
+    margin: 5px 0px 0px 230px;
+    height: 10px;
+    width: 10px;
+}
+#highLow{
+    margin: 15px 0px 0px 5px;
+}
+
+
+@media only screen and (min-width : 0px) and (max-width : 375px){
+
+}
