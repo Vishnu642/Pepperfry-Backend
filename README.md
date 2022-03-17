@@ -20,6 +20,14 @@
 <li>Built the wishlist page.</li>
   </ul>
   
+   <h3>Contributors:</h3>
+  <ul>
+ <li>Jenish</li>
+ <li>Sammith gowda</li>
+ <li>Prashanth tiwari</li>
+ <li>Aniket</li>
+</ul>
+  
   <h3>Screenshots</h3>
   
   <h3>Home page</h3>
